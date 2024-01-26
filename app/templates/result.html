@@ -1,0 +1,181 @@
+{% extends "nav-bar.html" %} {% block title %} Results {% endblock %} {% block
+content %}
+<h1 class="heDing">{{ title }}</h1>
+
+<div>
+  <div class="card-group">
+    <div class="col-sm-3">
+      <div class="card-body text-center">
+        <img
+          style="
+            padding: 5px;
+            padding-right: 2.5px;
+            width: 90%;
+            height: 22rem;
+            align-self: center;
+          "
+          src="{{ movie_list[0] }}"
+        />
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="card-body text-center">
+        <img
+          style="
+            padding: 5px;
+            padding-left: 2.5px;
+            padding-right: 2.5px;
+            width: 90%;
+            height: 22rem;
+          "
+          src="{{ movie_list[1] }}"
+        />
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="card-body text-center">
+        <img
+          style="
+            padding: 5px;
+            padding-left: 2.5px;
+            padding-right: 2.5px;
+            width: 90%;
+            height: 22rem;
+          "
+          src="{{ movie_list[2] }}"
+        />
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="card-body text-center">
+        <img
+          style="padding: 5px; padding-left: 2.5px; width: 90%; height: 22rem"
+          src="{{ movie_list[3] }}"
+        />
+      </div>
+    </div>
+  </div>
+
+  <span id="more">
+    <div class="card-group">
+      <div class="col-sm-3">
+        <div class="card-body text-center">
+          <img
+            style="
+              padding: 5px;
+              padding-right: 2.5px;
+              width: 90%;
+              height: 22rem;
+              align-self: center;
+            "
+            src="{{ movie_list[4] }}"
+          />
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card-body text-center">
+          <img
+            style="
+              padding: 5px;
+              padding-left: 2.5px;
+              padding-right: 2.5px;
+              width: 90%;
+              height: 22rem;
+            "
+            src="{{ movie_list[5] }}"
+          />
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card-body text-center">
+          <img
+            style="
+              padding: 5px;
+              padding-left: 2.5px;
+              padding-right: 2.5px;
+              width: 90%;
+              height: 22rem;
+            "
+            src="{{ movie_list[6] }}"
+          />
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card-body text-center">
+          <img
+            style="padding: 5px; padding-left: 2.5px; width: 90%; height: 22rem"
+            src="{{ movie_list[7] }}"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="card-group">
+      <div class="col-sm-3">
+        <div class="card-body text-center">
+          <img
+            style="
+              padding: 5px;
+              padding-right: 2.5px;
+              width: 90%;
+              height: 22rem;
+              align-self: center;
+            "
+            src="{{ movie_list[8] }}"
+          />
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card-body text-center">
+          <img
+            style="
+              padding: 5px;
+              padding-left: 2.5px;
+              padding-right: 2.5px;
+              width: 90%;
+              height: 22rem;
+            "
+            src="{{ movie_list[9] }}"
+          />
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card-body text-center">
+          <img
+            style="
+              padding: 5px;
+              padding-left: 2.5px;
+              padding-right: 2.5px;
+              width: 90%;
+              height: 22rem;
+            "
+            src="{{ movie_list[10] }}"
+          />
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card-body text-center">
+          <img
+            style="padding: 5px; padding-left: 2.5px; width: 90%; height: 22rem"
+            src="{{ movie_list[11] }}"
+          />
+        </div>
+      </div>
+    </div>
+  </span>
+</div>
+
+<center>
+  <button class="btnstyle" onclick="myFunction()" id="myBtn">Show more</button>
+</center>
+
+{% endblock %}

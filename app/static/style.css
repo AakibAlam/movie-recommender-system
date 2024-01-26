@@ -1,0 +1,43 @@
+.drpdwn {
+  width: 13rem;
+  background-color: aliceblue;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.drpdwn_item {
+  width: 100%;
+  border-color: black;
+  text-align: center;
+}
+
+.heDing {
+  text-align: center;
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+}
+
+#more {
+  display: none;
+}
+
+.btnstyle {
+  margin: 1rem;
+  background-color: transparent;
+  border-color: black;
+  border-radius: 10px;
+  width: 8rem;
+  height: 3rem;
+}
+
+.homeimg {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: top;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
