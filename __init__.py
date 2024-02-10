@@ -13,8 +13,8 @@ def create_app():
 
     app.config['MONGO_URI'] = os.environ.get('MONGO_URI')
 
-    from .home import home
-    from .model import insert_into_db
+    from home import home
+    from model import insert_into_db
     # insert_into_db() # First time just to create a collection in MonogDB.
 
     app.register_blueprint(home, url_prefix='/')

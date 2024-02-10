@@ -8,8 +8,8 @@ api_key = os.environ.get('TMDB_API_KEY')
 home = Blueprint('home', __name__)
 
 def recommended_movies_by_similarity(movie_name):
-    from app import db
-    from .model import get_similarity_matrix
+    from __init__ import db
+    from model import get_similarity_matrix
     similarity = get_similarity_matrix()
     result = db.movies.find_one({'name': movie_name})
     index_of_the_movie = int(result['id'])
@@ -33,7 +33,7 @@ def recommended_movies_by_similarity(movie_name):
 
 
 def recommended_movies_by_genre(genre):
-    from app import db
+    from __init__ import db
     recommended_movie_posters = []
     movies = db.movies.find(
         {'genre': {"$in": [genre]}},
@@ -52,7 +52,7 @@ def recommended_movies_by_genre(genre):
 
 @home.route('/', methods=['GET', 'POST'])
 def homepage():
-    from app import db
+    from __init__ import db
     if request.method == 'POST' and len(request.form.get('movie_name')) > 0:
         movie_name = request.form.get('movie_name')
         movie = db.movies.find_one({'name': movie_name})
